@@ -23,15 +23,15 @@ impl Asteroid {
         let diry = shipy - y;
 
         Asteroid {
-            x: x,
-            y: y,
+            x,
+            y,
             incx: x,
             incy: y,
-            size: size,
+            size,
             initx: x,
             inity: y,
-            dirx: dirx,
-            diry: diry,
+            dirx,
+            diry,
             a: dirx / diry,
             vertices: [
                 Vertex{ position: [x - size / 2.0, y - size / 2.0] },
